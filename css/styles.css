@@ -44,14 +44,20 @@ img {
 }
 .page-header .container {
   display: flex;
-  justify-content: space-between;
-  /* padding: 24px 0; */
+}
+
+.nav .logo {
+  margin-right: 93px;
 }
 
 .site-nav li {
-  margin-left: 50px;
-  padding: 32px 0;
+  display: inline-flex;
+  margin-right: 50px;
   position: relative;
+}
+
+.site-nav li:last-child {
+  margin-right: 0px;
 }
 
 .current::after {
@@ -63,6 +69,10 @@ img {
   width: 100%;
   height: 4px;
   background-color: var(--blue-text);
+}
+
+.contact-info {
+  margin-left: auto;
 }
 
 .contact-info li:first-child {
@@ -79,6 +89,7 @@ img {
 }
 
 .site-nav a {
+  padding: 32px 0;
   color: var(--black-text);
   font-weight: 500;
   font-size: 14px;
@@ -401,7 +412,7 @@ img {
   color: var(--blue-text);
 }
 
-.contacts-info {
+.contacts {
   margin-top: 20px;
 }
 
@@ -748,6 +759,7 @@ img {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-group input {
@@ -757,6 +769,7 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-group input:focus + .modal-icon {
@@ -781,6 +794,7 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea:focus {
